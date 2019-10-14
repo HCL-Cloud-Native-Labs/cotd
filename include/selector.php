@@ -63,8 +63,8 @@ if ( !empty($service) ) {
 } elseif ( file_exists('data/'.$_SESSION['SELECTOR'].'.php') ) {
     include('data/'.$_SESSION['SELECTOR'].'.php');
 } else {
-    // Unsupported theme so default to pets
-    $_SESSION['SELECTOR'] = 'pets';
+    // Unsupported theme so default to cities
+    $_SESSION['SELECTOR'] = 'cities';
     include('data/cities.php');
 }
 
