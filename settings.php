@@ -37,15 +37,15 @@ $clientip = $_SERVER['HTTP_CLIENT_IP']?$_SERVER['HTTP_CLIENT_IP']:($_SERVER['HTT
     cache: false
   });
 </script>
-	
+
 </head>
 <body>
 
 	<form id="login" action="settings_submit.php" method="get" rel="external" data-ajax="false">
-    	
+
 		<fieldset data-role="controlgroup">
-        	<legend>Settings for <?php echo $clientip ?> </legend>
-                  
+        	<legend>Settings for the following <?php echo $clientip ?> </legend>
+
         	<div data-role="fieldcontain">
             	<label for="selector" style="text-align:right">SELECTOR:</label>
         		<input type="text" name="selector" id="selector" class="selector" value="<?php echo $selector; ?>" data-mini="true" >
