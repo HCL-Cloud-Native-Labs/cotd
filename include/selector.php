@@ -32,7 +32,7 @@ if ( empty($dbhost) ) {
     $_SESSION['DB'] = 'true';
 }
 
-$selector = getenv('SELECTOR');
+$selector = 'cities';
 // if theme not set by client then determine active theme default to cities
 if ( empty($_SESSION['SELECTOR']) ) {
 
